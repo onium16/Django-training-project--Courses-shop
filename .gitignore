@@ -1,5 +1,6 @@
 # folders and files this project
 __djangovenv/
+.djangovenv/
 
 
 # Byte-compiled / optimized / DLL files

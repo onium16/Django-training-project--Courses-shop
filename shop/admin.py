@@ -11,15 +11,15 @@ class CourseAdmin(admin.ModelAdmin):
 
 class CoursesInline(admin.TabularInline):
     model = Course
-    exclude = ['creat_at']
+    exclude = ['created_at']
     extra = 1
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('title', 'id', 'creat_at')
+    list_display = ('title', 'id', 'created_at')
     fieldsets = [
         (None, {"fields": ['title']}),
         ('Dates', {
-               'fields' : ['creat_at'],
+               'fields' : ['created_at'],
                'classes': ['collapse']
             })
     ]
