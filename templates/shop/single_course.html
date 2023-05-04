@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ course.title }} {% endblock %}
+
+{% comment %} 
+{% block content %}
+<h1 class = "mt-5">{{ course.title }}</h1>
+<h2>{{ course.category }}</h2>
+<p>Price: {{ course.price }}</p>
+<p>Students Quantity: {{ course.students_qty }}</p>
+<button class = 'btn btn-primary'>Buy</button>
+{% endblock %} {% endcomment %}
+
+
+{% block content %}
+<h3 class = "mt-5"></h3>
+<div class="card" style="width: 18rem; margin-top: 5;">
+    <div class="card-body">
+        <h5 class="card-title">{{ course.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">{{ course.category }}</h6>
+        <p class="card-text">Students Quantity: {{ course.students_qty }}</p>
+        <p class="card-text">Price: {{ course.price }}</p>
+        <button class = 'btn btn-primary'>Buy</button>
+    </div>
+</div>
+
+  {% endblock %}
